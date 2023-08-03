@@ -1,3 +1,16 @@
+## [3.2.7](https://github.com/jlsude/testing-release/compare/v3.2.6-alpha...v3.2.7) (2023-08-03)
+
+
+### Bug Fixes
+
+* awdadwadsssssss ([b4d2873](https://github.com/jlsude/testing-release/commit/b4d2873a2acf0ffc38a4d6316c2b00da16c0385e))
+
+
+
+## [3.2.6-alpha](https://github.com/jlsude/testing-release/compare/v3.2.6...v3.2.6-alpha) (2023-08-03)
+
+
+
 ## [3.2.6](https://github.com/jlsude/testing-release/compare/v3.2.5-alpha...v3.2.6) (2023-08-03)
 
 
@@ -19,19 +32,6 @@
 ### Bug Fixes
 
 * added a final fix ([4d90ca0](https://github.com/jlsude/testing-release/commit/4d90ca0fdf7d40dc138b7d4be632599108891c10))
-
-
-
-## [3.2.4-alpha](https://github.com/jlsude/testing-release/compare/v3.2.4...v3.2.4-alpha) (2023-08-03)
-
-
-
-## [3.2.4](https://github.com/jlsude/testing-release/compare/v3.2.3-alpha...v3.2.4) (2023-08-03)
-
-
-### Bug Fixes
-
-* added a fix ([60adfa0](https://github.com/jlsude/testing-release/commit/60adfa0a5966b47912bfe48c817814cbcfa088f0))
 
 
 
