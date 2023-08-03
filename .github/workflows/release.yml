@@ -26,6 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Get All Commit Messages
+        id: get_commits
+        run: |
+          COMMIT_MESSAGES=$(git log --pretty=format:"%s" --since="last release tag")
+          echo "::set-output name=commit_messages::$COMMIT_MESSAGES"
+
       - name: Bump Version and Create Release
         id: bump
         run: |
@@ -42,7 +48,9 @@ jobs:
 
       - name: Create GitHub Release
         run: |
-          # Create a GitHub release using the gh CLI
-          gh release create v${{ steps.bump.outputs.new_version }} --notes-file CHANGELOG.md
+          # Use commit messages obtained earlier to create release notes
+          COMMIT_MESSAGES="${{ steps.get_commits.outputs.commit_messages }}"
+          echo "Release Notes:\n$COMMIT_MESSAGES" > release-notes.txt
+          gh release create v${{ steps.bump.outputs.new_version }} --notes-file release-notes.txt
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
