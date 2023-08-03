@@ -3,7 +3,7 @@ name: Release Workflow
 on:
   push:
     branches:
-      - master  # Change this to your main branch name
+      - master
 
 jobs:
   release:
@@ -16,20 +16,23 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14  # Use the version you need
+          node-version: 14
+
+      - name: Configure Git Identity
+        run: |
+          git config user.email "johnlouiesude@gmail.com"
+          git config user.name "jlsude"
 
       - name: Install dependencies
         run: npm install
 
       - name: Bump Version and Create Release
-        id: bump
         run: |
           npm install -g standard-version
           standard-version
-          
+
       - name: Push Changes and Tags
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the secret name you created
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git push --follow-tags origin main
-
