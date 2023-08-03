@@ -1,3 +1,12 @@
+## [3.2.1](https://github.com/jlsude/testing-release/compare/v3.2.0...v3.2.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* fix the yml file ([ff085f7](https://github.com/jlsude/testing-release/commit/ff085f7a97ef988d84ae7f2bde96d2c837d85837))
+
+
+
 # [3.2.0](https://github.com/jlsude/testing-release/compare/v3.1.0...v3.2.0) (2023-08-03)
 
 
@@ -37,26 +46,6 @@
 ### Bug Fixes
 
 * dwawdad ([b44a469](https://github.com/jlsude/testing-release/commit/b44a46916909db3355c829017fe3815185171d8b))
-
-
-
-# [2.0.0](https://github.com/jlsude/testing-release/compare/v1.7.1...v2.0.0) (2023-08-03)
-
-
-### Bug Fixes
-
-* bug fix ([3f330c5](https://github.com/jlsude/testing-release/commit/3f330c53803ab61baaa7e219f1af5fc542e65026))
-
-
-### Features
-
-* added a feature ([f1e04aa](https://github.com/jlsude/testing-release/commit/f1e04aa9a13f4905fd2db3aa9fdc0088b85d3f26))
-* added a new feature ([d428150](https://github.com/jlsude/testing-release/commit/d42815051c475a1e1ee2a20a7dd7dcb861bf3160))
-
-
-### BREAKING CHANGES
-
-* rtansion to version 2
 
 
 
