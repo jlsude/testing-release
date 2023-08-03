@@ -50,7 +50,7 @@ jobs:
         run: |
           # Use commit messages obtained earlier to create release notes
           COMMIT_MESSAGES="${{ steps.get_commits.outputs.commit_messages }}"
-          echo "Release Notes:\n$COMMIT_MESSAGES" > release-notes.txt
+          echo "Release Notes: \n $COMMIT_MESSAGES" > release-notes.txt
           gh release create v${{ steps.bump.outputs.new_version }} --notes-file release-notes.txt
         env:
           GH_TOKEN: ${{ github.token }}
