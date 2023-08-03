@@ -1,3 +1,13 @@
+# [3.2.0](https://github.com/jlsude/testing-release/compare/v3.1.0...v3.2.0) (2023-08-03)
+
+
+### Features
+
+* added a hook to the suffixes of semver ([7b89d79](https://github.com/jlsude/testing-release/commit/7b89d798f56528d2f01de27ed748ef3cdff9e5f9))
+* added a hook to the suffixes of semver1 ([81f0fd9](https://github.com/jlsude/testing-release/commit/81f0fd9dc42cfc0690f591a8a420e7b947ffe489))
+
+
+
 # [3.1.0](https://github.com/jlsude/testing-release/compare/v3.0.0...v3.1.0) (2023-08-03)
 
 
@@ -47,15 +57,6 @@
 ### BREAKING CHANGES
 
 * rtansion to version 2
-
-
-
-## [1.7.1](https://github.com/jlsude/testing-release/compare/v1.7.0...v1.7.1) (2023-08-03)
-
-
-### Bug Fixes
-
-* new bug fixes ([5f5d8c6](https://github.com/jlsude/testing-release/commit/5f5d8c69d4ac98615b64305ff90e38f39fc3eafa))
 
 
 
