@@ -9,6 +9,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+
+      - name: conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3.7.1
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Determine Release Version
+        id: determine_version
+        run: |
+          # Retrieve the latest version from the changelog
+          VERSION=$(echo "${{ steps.changelog.outputs.tag }}" | sed 's/^v//')
+
+          CURRENT_STAGE="alpha"
+          # Append the suffix "-alpha" to the version
+          RELEASE_STAGES="${VERSION}-${CURRENT_STAGE}"
+
+          # Update the package.json file with the alpha version
+          npm version "$RELEASE_STAGES"
+		
+          # Push the updated package.json file to the repository
+	  git push --follow-tags origin master
+
+          echo "::set-output name=release_version::${RELEASE_STAGES}"
+        shell: bash
+
+      - name: create release
+        uses: actions/create-release@v1
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        with:
+          tag_name: ${{ steps.determine_version.outputs.release_version }}
+          release_name: ${{ steps.determine_version.outputs.release_version }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+name: Releases
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
