@@ -44,4 +44,4 @@ jobs:
           # Create a GitHub release using the gh CLI
           gh release create v${{ steps.bump.outputs.new_version }} ./dist/* --notes-file CHANGELOG.md
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  
+          GH_TOKEN: ${{ github.token }}
