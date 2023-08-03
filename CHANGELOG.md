@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.4 (2023-08-03)
+
+
+### Bug Fixes
+
+* adding a fix for v1.2.4 tadah ([c215282](https://github.com/jlsude/testing-release/commit/c21528291327f11fa54507cf2a1a84a655ba8ea1))
+
 ### 1.2.3 (2023-08-03)
 
 
