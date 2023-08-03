@@ -28,9 +28,8 @@ jobs:
           RELEASE_STAGES="${VERSION}-${CURRENT_STAGE}"
 
           # Update the package.json file with the alpha version
-          jq --arg new_version "$RELEASE_STAGES" '.version = $new_version' package.json > temp_package.json
-          mv temp_package.json package.json
-
+          npm version "$RELEASE_STAGES"
+          
           echo "::set-output name=release_version::${RELEASE_STAGES}"
         shell: bash
 
