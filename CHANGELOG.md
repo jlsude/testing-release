@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.5.0 (2023-08-03)
+
+
+### Features
+
+* added a new feature the replace the prev version of the workflow file again ([c9785e5](https://github.com/jlsude/testing-release/commit/c9785e5b83c7784ab3dff16c1bc254716f61148b))
+
 ## 1.4.0 (2023-08-03)
 
 
