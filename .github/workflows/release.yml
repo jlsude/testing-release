@@ -33,7 +33,7 @@ jobs:
           standard-version
 
       - name: Push Changes and Tags
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  
         run: |
           git remote set-url origin https://github.com/${{ github.repository }}.git
