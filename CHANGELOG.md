@@ -1,3 +1,13 @@
+## [1.6.6](https://github.com/jlsude/testing-release/compare/v1.6.5...v1.6.6) (2023-08-03)
+
+
+### Bug Fixes
+
+* new bug fixes ([674814b](https://github.com/jlsude/testing-release/commit/674814b235e28d970fc332dcabf7320a2eb1461e))
+* newwwbug fixes ([7bfc300](https://github.com/jlsude/testing-release/commit/7bfc300725fdd847127525628a1d81ecf705946e))
+
+
+
 ## [1.6.5](https://github.com/jlsude/testing-release/compare/v1.6.4...v1.6.5) (2023-08-03)
 
 
@@ -38,16 +48,6 @@
 * fix again ([25237f2](https://github.com/jlsude/testing-release/commit/25237f23a645cd1b9487f2b100d66a61c62c43ee))
 * reconfigured the release file ([8a937f1](https://github.com/jlsude/testing-release/commit/8a937f16f46d9fc13b44c0efb2bd029500df157e))
 * reconfigured the release file again ([ec2ae0e](https://github.com/jlsude/testing-release/commit/ec2ae0e43ab9c0b50c7b1a51b2089d469b62495e))
-
-
-
-## [1.6.1](https://github.com/jlsude/testing-release/compare/v1.6.0...v1.6.1) (2023-08-03)
-
-
-### Bug Fixes
-
-* made a bug fix ([0ce3120](https://github.com/jlsude/testing-release/commit/0ce3120b0f28e94b27e93d5c44b8e2b63abe0a15))
-* made another bug fix ([4ed5b96](https://github.com/jlsude/testing-release/commit/4ed5b964506853fe3ce97f238967e9475c20e0f1))
 
 
 
