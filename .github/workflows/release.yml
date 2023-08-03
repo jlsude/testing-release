@@ -33,6 +33,6 @@ jobs:
 
       - name: Push Changes and Tags
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git push --follow-tags origin master
