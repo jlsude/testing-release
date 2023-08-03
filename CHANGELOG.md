@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.daw
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.3.0 (2023-08-03)
+
+
+### Features
+
+* added a feature for v1.3.0 ([e9cdd8c](https://github.com/jlsude/testing-release/commit/e9cdd8c007ce0dcffdf09c2770a9418903c13611))
 
 ### 1.2.4 (2023-08-03)
 
