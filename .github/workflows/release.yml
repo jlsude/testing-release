@@ -19,7 +19,7 @@ jobs:
 
       - name: conventional Changelog Action
         id: changelog
-        uses: TriPSs/conventional-changelog-action@v4.0.0
+        uses: TriPSs/conventional-changelog-action@v3.7.1
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
           output-file: "false"
