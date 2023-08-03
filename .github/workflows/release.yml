@@ -19,9 +19,10 @@ jobs:
 
       - name: conventional Changelog Action
         id: changelog
-        uses: TriPSs/conventional-changelog-action@v4
+        uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
+          output-file: "false"
 
       - name: Determine Release Version
         id: determine_version
