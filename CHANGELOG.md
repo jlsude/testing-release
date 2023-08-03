@@ -1,3 +1,15 @@
+## [3.2.2](https://github.com/jlsude/testing-release/compare/v3.2.1...v3.2.2) (2023-08-03)
+
+
+### Bug Fixes
+
+* added a new fix ([337db18](https://github.com/jlsude/testing-release/commit/337db18f9740df915286fd31deee8e4f1929cac0))
+* added a newer fix ([9868d7c](https://github.com/jlsude/testing-release/commit/9868d7c4558266c1e5ad6b82024245f9fc56919b))
+* added a newest fix ([afd5c84](https://github.com/jlsude/testing-release/commit/afd5c849d6bc83be5269bbb39510f289113f4763))
+* fix the commit isuee ([ba13d99](https://github.com/jlsude/testing-release/commit/ba13d991988e8d7f702e0dd444682a7ea482c7bf))
+
+
+
 ## [3.2.1](https://github.com/jlsude/testing-release/compare/v3.2.0...v3.2.1) (2023-08-03)
 
 
@@ -37,15 +49,6 @@
 ### BREAKING CHANGES
 
 * dwadwadawdad
-
-
-
-## [2.0.1](https://github.com/jlsude/testing-release/compare/v2.0.0...v2.0.1) (2023-08-03)
-
-
-### Bug Fixes
-
-* dwawdad ([b44a469](https://github.com/jlsude/testing-release/commit/b44a46916909db3355c829017fe3815185171d8b))
 
 
 
