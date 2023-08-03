@@ -1,56 +1,30 @@
-name: Release Workflow
-
+name: Releases
 on:
   push:
-    branches:
+    bnraches:
       - master
 
 jobs:
-  release:
+  changelog:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - users: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3.7.1
         with:
-          node-version: 14
+          github_token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Configure Git Identity
-        run: |
-          git config user.email "johnlouiesude@gmail.com"
-          git config user.name "jlsude"
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Get All Commit Messages
-        id: get_commits
-        run: |
-          COMMIT_MESSAGES=$(git log --pretty=format:"%s" --since="last release tag")
-          echo "::set-output name=commit_messages::$COMMIT_MESSAGES"
-
-      - name: Bump Version and Create Release
-        id: bump
-        run: |
-          npm install -g standard-version
-          standard-version
-          echo "::set-output name=new_version::$(cat package.json | jq -r .version)"
+      - name: Create Release
+        uses: actions/create-release@v1
+        if: steps.changelog.outputs.release_created == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag_name }}
+          release_name: ${{ steps.changelog.outputs.release_name }}
+          body: ${{ steps.changelog.outputs.body }}
           
-      - name: Push Changes and Tags
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: |
-          git remote set-url origin https://github.com/${{ github.repository }}.git
-          git push --follow-tags origin master
-
-      - name: Create GitHub Release
-        run: |
-          # Use commit messages obtained earlier to create release notes
-          COMMIT_MESSAGES="${{ steps.get_commits.outputs.commit_messages }}"
-          echo "Release Notes: \n $COMMIT_MESSAGES" > release-notes.txt
-          gh release create v${{ steps.bump.outputs.new_version }} --notes-file release-notes.txt
-        env:
-          GH_TOKEN: ${{ github.token }}
+        
