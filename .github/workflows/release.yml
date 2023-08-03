@@ -43,10 +43,15 @@ jobs:
           echo "release_version=${RELEASE_STAGES}" >> $GITHUB_ENV
         shell: bash
 
+      - name: Create Git Tag
+        run: |
+          git tag ${{ env.release_version }}
+          git push origin ${{ env.release_version }}
+        shell: bash
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          prerelease: true  # Set this to true if it's a pre-release, false for a regular release
+          token: ${{ secrets.PAT_TOKEN }}
+          prerelease: true
