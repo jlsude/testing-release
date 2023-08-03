@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.3 (2023-08-03)
+
+
+### Bug Fixes
+
+* added a fix to  feature 1 again again ([79b0714](https://github.com/jlsude/testing-release/commit/79b071454eba35693663008c76889c50224e3dcc))
+
 ### 1.2.2 (2023-08-03)
 
 
