@@ -1,3 +1,12 @@
+# [3.1.0](https://github.com/jlsude/testing-release/compare/v3.0.0...v3.1.0) (2023-08-03)
+
+
+### Features
+
+* added some code in the yml file ([18cb920](https://github.com/jlsude/testing-release/commit/18cb92045c246ef1b64d3ab1507177b4ccb7137e))
+
+
+
 # [3.0.0](https://github.com/jlsude/testing-release/compare/v2.0.1...v3.0.0) (2023-08-03)
 
 
@@ -47,21 +56,6 @@
 ### Bug Fixes
 
 * new bug fixes ([5f5d8c6](https://github.com/jlsude/testing-release/commit/5f5d8c69d4ac98615b64305ff90e38f39fc3eafa))
-
-
-
-# [1.7.0](https://github.com/jlsude/testing-release/compare/v1.6.6...v1.7.0) (2023-08-03)
-
-
-### Bug Fixes
-
-* added it again ([77b28b4](https://github.com/jlsude/testing-release/commit/77b28b47a8a4d43bb4785001840b4c287196ff7f))
-* removed the new line ([044646b](https://github.com/jlsude/testing-release/commit/044646b410b25b751a0f4f358836082a8b3a9102))
-
-
-### Features
-
-* added a newer feature ([3fd24ed](https://github.com/jlsude/testing-release/commit/3fd24edc780be5b074cdd6edec2c9aa165f51304))
 
 
 
