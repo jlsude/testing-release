@@ -44,12 +44,9 @@ jobs:
         shell: bash
 
       - name: Create GitHub Release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ env.release_version }}  # Use the release_version environment variable
-		  prerelease: true
-          release_name: ${{ env.release_version }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
+          prerelease: true  # Set this to true if it's a pre-release, false for a regular release
