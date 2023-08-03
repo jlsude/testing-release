@@ -22,11 +22,16 @@ jobs:
         run: |
           # Retrieve the latest version from the changelog
           VERSION=$(echo "${{ steps.changelog.outputs.tag }}" | sed 's/^v//')
-
+		  
+		  CURRENT_STAGE = "alpha"
           # Append the suffix "-alpha" to the version
-          ALPHA_VERSION="${VERSION}-alpha"
+          RELEASE_STAGES="${VERSION}-${CURRENT_STAGE}"
 
-          echo "::set-output name=alpha_version::${ALPHA_VERSION}"
+          # Update the package.json file with the alpha version
+          jq --arg new_version "$RELEASE_STAGES" '.version = $new_version' package.json > temp_package.json
+          mv temp_package.json package.json
+
+          echo "::set-output name=release_version::${RELEASE_STAGES}"
         shell: bash
 
       - name: create release
@@ -35,6 +40,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ steps.determine_version.outputs.alpha_version }}
-          release_name: ${{ steps.determine_version.outputs.alpha_version }}
+          tag_name: ${{ steps.determine_version.outputs.release_version }}
+          release_name: ${{ steps.determine_version.outputs.release_version }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
