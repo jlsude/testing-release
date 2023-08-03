@@ -1,3 +1,12 @@
+## [1.6.4](https://github.com/jlsude/testing-release/compare/v1.6.3...v1.6.4) (2023-08-03)
+
+
+### Bug Fixes
+
+* changed the bnrach trigger to master branch ([1a62cc2](https://github.com/jlsude/testing-release/commit/1a62cc2b67d77f89c34b0f765031d0eb224e82b6))
+
+
+
 ## [1.6.3](https://github.com/jlsude/testing-release/compare/v1.6.2...v1.6.3) (2023-08-03)
 
 
@@ -38,15 +47,6 @@
 ### Features
 
 * added a newer feature ([d6e7d41](https://github.com/jlsude/testing-release/commit/d6e7d41848e093c50cef3bf01bd0c68cbcf52a46))
-
-
-
-## [1.5.2](https://github.com/jlsude/testing-release/compare/v1.5.1...v1.5.2) (2023-08-03)
-
-
-### Features
-
-* added a new feat ([9b261e9](https://github.com/jlsude/testing-release/commit/9b261e9556252a082cbc8b17117af16415dfc231))
 
 
 
