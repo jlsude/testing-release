@@ -1,6 +1,6 @@
 {
   "name": "testing-release",
-  "version": "3.2.4-alpha",
+  "version": "3.2.5",
   "description": "",
   "main": "index.js",
   "scripts": {
