@@ -6,3 +6,4 @@ console.log("new dwadwadwad")
 console.log("added bug fix")
 
 console.log("added bug fix")
+console.log("add a feature")
