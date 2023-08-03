@@ -1,3 +1,16 @@
+## [3.2.9](https://github.com/jlsude/testing-release/compare/v3.2.8-alpha...v3.2.9) (2023-08-03)
+
+
+### Bug Fixes
+
+* wdadssssssssssssssss ([b1dc108](https://github.com/jlsude/testing-release/commit/b1dc1080af9f92a47b88ba9a7efa2e32f026833b))
+
+
+
+## [3.2.8-alpha](https://github.com/jlsude/testing-release/compare/v3.2.8...v3.2.8-alpha) (2023-08-03)
+
+
+
 ## [3.2.8](https://github.com/jlsude/testing-release/compare/v3.2.7-alpha...v3.2.8) (2023-08-03)
 
 
@@ -17,21 +30,6 @@
 ### Bug Fixes
 
 * awdadwadsssssss ([b4d2873](https://github.com/jlsude/testing-release/commit/b4d2873a2acf0ffc38a4d6316c2b00da16c0385e))
-
-
-
-## [3.2.6-alpha](https://github.com/jlsude/testing-release/compare/v3.2.6...v3.2.6-alpha) (2023-08-03)
-
-
-
-## [3.2.6](https://github.com/jlsude/testing-release/compare/v3.2.5-alpha...v3.2.6) (2023-08-03)
-
-
-### Bug Fixes
-
-* added a fix to ([121a5f9](https://github.com/jlsude/testing-release/commit/121a5f9ba8bdf3c2951bab017d76f37b68e194bf))
-* added a fix to the warning ([87f64fb](https://github.com/jlsude/testing-release/commit/87f64fbf44a0eed65e69561c697fe9b967858f50))
-* adwadwADWA ([8654e0c](https://github.com/jlsude/testing-release/commit/8654e0cdf65ac418606f8a99f5ceb238acccdc8d))
 
 
 
