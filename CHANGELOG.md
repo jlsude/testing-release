@@ -1,3 +1,12 @@
+## [2.0.1](https://github.com/jlsude/testing-release/compare/v2.0.0...v2.0.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* dwawdad ([b44a469](https://github.com/jlsude/testing-release/commit/b44a46916909db3355c829017fe3815185171d8b))
+
+
+
 # [2.0.0](https://github.com/jlsude/testing-release/compare/v1.7.1...v2.0.0) (2023-08-03)
 
 
@@ -49,16 +58,6 @@
 
 * new bug fixes ([674814b](https://github.com/jlsude/testing-release/commit/674814b235e28d970fc332dcabf7320a2eb1461e))
 * newwwbug fixes ([7bfc300](https://github.com/jlsude/testing-release/commit/7bfc300725fdd847127525628a1d81ecf705946e))
-
-
-
-## [1.6.5](https://github.com/jlsude/testing-release/compare/v1.6.4...v1.6.5) (2023-08-03)
-
-
-### Bug Fixes
-
-* bug fixes ([2cdae6e](https://github.com/jlsude/testing-release/commit/2cdae6e8e7bd5a3779e20cbe1581389c1e9500d3))
-* cleaned the test js file ([e71945a](https://github.com/jlsude/testing-release/commit/e71945ab7bf462409d514aee6c1c2e319ff39607))
 
 
 
