@@ -1,3 +1,13 @@
+## [1.6.5](https://github.com/jlsude/testing-release/compare/v1.6.4...v1.6.5) (2023-08-03)
+
+
+### Bug Fixes
+
+* bug fixes ([2cdae6e](https://github.com/jlsude/testing-release/commit/2cdae6e8e7bd5a3779e20cbe1581389c1e9500d3))
+* cleaned the test js file ([e71945a](https://github.com/jlsude/testing-release/commit/e71945ab7bf462409d514aee6c1c2e319ff39607))
+
+
+
 ## [1.6.4](https://github.com/jlsude/testing-release/compare/v1.6.3...v1.6.4) (2023-08-03)
 
 
@@ -38,15 +48,6 @@
 
 * made a bug fix ([0ce3120](https://github.com/jlsude/testing-release/commit/0ce3120b0f28e94b27e93d5c44b8e2b63abe0a15))
 * made another bug fix ([4ed5b96](https://github.com/jlsude/testing-release/commit/4ed5b964506853fe3ce97f238967e9475c20e0f1))
-
-
-
-# [1.6.0](https://github.com/jlsude/testing-release/compare/v1.5.2...v1.6.0) (2023-08-03)
-
-
-### Features
-
-* added a newer feature ([d6e7d41](https://github.com/jlsude/testing-release/commit/d6e7d41848e093c50cef3bf01bd0c68cbcf52a46))
 
 
 
