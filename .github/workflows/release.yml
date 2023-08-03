@@ -22,8 +22,8 @@ jobs:
         run: |
           # Retrieve the latest version from the changelog
           VERSION=$(echo "${{ steps.changelog.outputs.tag }}" | sed 's/^v//')
-		  
-		  CURRENT_STAGE = "alpha"
+
+          CURRENT_STAGE="alpha"
           # Append the suffix "-alpha" to the version
           RELEASE_STAGES="${VERSION}-${CURRENT_STAGE}"
 
