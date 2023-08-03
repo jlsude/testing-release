@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+    
 
 jobs:
   release:
@@ -33,7 +34,7 @@ jobs:
 
       - name: Push Changes and Tags
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the secret name you created
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  
         run: |
           git remote set-url origin https://github.com/${{ github.repository }}.git
           git push --follow-tags origin master  
