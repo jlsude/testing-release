@@ -38,3 +38,10 @@ jobs:
         run: |
           git remote set-url origin https://github.com/${{ github.repository }}.git
           git push --follow-tags origin master  
+
+      - name: Create GitHub Release
+        run: |
+          # Create a GitHub release using the gh CLI
+          gh release create v${{ steps.bump.outputs.new_version }} ./dist/* --notes-file CHANGELOG.md
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  
