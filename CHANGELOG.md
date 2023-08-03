@@ -1,3 +1,17 @@
+# [3.0.0](https://github.com/jlsude/testing-release/compare/v2.0.1...v3.0.0) (2023-08-03)
+
+
+### Features
+
+* new feature added ([a99ede1](https://github.com/jlsude/testing-release/commit/a99ede1bd2273a9804439b4f43f5a832d2c7fa5b))
+
+
+### BREAKING CHANGES
+
+* dwadwadawdad
+
+
+
 ## [2.0.1](https://github.com/jlsude/testing-release/compare/v2.0.0...v2.0.1) (2023-08-03)
 
 
@@ -48,16 +62,6 @@
 ### Features
 
 * added a newer feature ([3fd24ed](https://github.com/jlsude/testing-release/commit/3fd24edc780be5b074cdd6edec2c9aa165f51304))
-
-
-
-## [1.6.6](https://github.com/jlsude/testing-release/compare/v1.6.5...v1.6.6) (2023-08-03)
-
-
-### Bug Fixes
-
-* new bug fixes ([674814b](https://github.com/jlsude/testing-release/commit/674814b235e28d970fc332dcabf7320a2eb1461e))
-* newwwbug fixes ([7bfc300](https://github.com/jlsude/testing-release/commit/7bfc300725fdd847127525628a1d81ecf705946e))
 
 
 
