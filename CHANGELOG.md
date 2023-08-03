@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.6.0 (2023-08-03)
+
+
+### Features
+
+* added a newer feature ([d6e7d41](https://github.com/jlsude/testing-release/commit/d6e7d41848e093c50cef3bf01bd0c68cbcf52a46))
+
 ### 1.5.2 (2023-08-03)
 
 ### 1.5.1 (2023-08-03)
