@@ -17,12 +17,24 @@ jobs:
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
 
+      - name: Determine Release Version
+        id: determine_version
+        run: |
+          # Retrieve the latest version from the changelog
+          VERSION=$(echo "${{ steps.changelog.outputs.tag }}" | sed 's/^v//')
+
+          # Append the suffix "-alpha" to the version
+          ALPHA_VERSION="${VERSION}-alpha"
+
+          echo "::set-output name=alpha_version::${ALPHA_VERSION}"
+        shell: bash
+
       - name: create release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          release_name: ${{ steps.changelog.outputs.tag }}
+          tag_name: ${{ steps.determine_version.outputs.alpha_version }}
+          release_name: ${{ steps.determine_version.outputs.alpha_version }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
