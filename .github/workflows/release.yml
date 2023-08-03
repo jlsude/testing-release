@@ -32,7 +32,7 @@ jobs:
 		
           # Push the updated package.json file to the repository
 	  git push --follow-tags origin master
-   
+
           echo "::set-output name=release_version::${RELEASE_STAGES}"
         shell: bash
 
