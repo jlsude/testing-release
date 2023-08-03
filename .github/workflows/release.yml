@@ -19,7 +19,7 @@ jobs:
 
       - name: conventional Changelog Action
         id: changelog
-        uses: TriPSs/conventional-changelog-action@v3.7.1
+        uses: TriPSs/conventional-changelog-action@v4.0.0
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
 
@@ -50,5 +50,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
           tag_name: ${{ env.release_version }}  # Use the release_version environment variable
+		  prerelease: true
           release_name: ${{ env.release_version }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
