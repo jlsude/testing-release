@@ -53,4 +53,4 @@ jobs:
           echo "Release Notes:\n$COMMIT_MESSAGES" > release-notes.txt
           gh release create v${{ steps.bump.outputs.new_version }} --notes-file release-notes.txt
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
