@@ -49,7 +49,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ env.release_version }}
+          tag_name: ${{ env.release_version }}  # Use the release_version environment variable
           release_name: ${{ env.release_version }}
-          prerelease: true
-
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+		  prerelease: true
