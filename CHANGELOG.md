@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/jlsude/testing-release/compare/v1.7.0...v1.7.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* new bug fixes ([5f5d8c6](https://github.com/jlsude/testing-release/commit/5f5d8c69d4ac98615b64305ff90e38f39fc3eafa))
+
+
+
 # [1.7.0](https://github.com/jlsude/testing-release/compare/v1.6.6...v1.7.0) (2023-08-03)
 
 
@@ -39,19 +48,6 @@
 ### Bug Fixes
 
 * changed the bnrach trigger to master branch ([1a62cc2](https://github.com/jlsude/testing-release/commit/1a62cc2b67d77f89c34b0f765031d0eb224e82b6))
-
-
-
-## [1.6.3](https://github.com/jlsude/testing-release/compare/v1.6.2...v1.6.3) (2023-08-03)
-
-
-### Bug Fixes
-
-* fix again ([49ed4b2](https://github.com/jlsude/testing-release/commit/49ed4b2e40eb9602ff3219a6842dacbba561ee96))
-* fix again1 ([1b76380](https://github.com/jlsude/testing-release/commit/1b76380c127a28808117eed3b435585181951da0))
-* fix again1 ([c96bbff](https://github.com/jlsude/testing-release/commit/c96bbff6492c68b635e2f5cba89d9ee5b6df7be2))
-* fix again12 ([5b0f492](https://github.com/jlsude/testing-release/commit/5b0f49209af2dd4fa2f33a538d3410f7a01ec194))
-* fix again123 ([9df7844](https://github.com/jlsude/testing-release/commit/9df7844ab09ffff80b18e0fbc8125ffe510083de))
 
 
 
