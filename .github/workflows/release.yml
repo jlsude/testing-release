@@ -34,7 +34,7 @@ jobs:
 
       - name: Push Changes and Tags
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  
         run: |
           git remote set-url origin https://github.com/${{ github.repository }}.git
           git push --follow-tags origin master  
