@@ -43,15 +43,22 @@ jobs:
           echo "release_version=${RELEASE_STAGES}" >> $GITHUB_ENV
         shell: bash
 
-      - name: Create Git Tag
-        run: |
-          git tag ${{ env.release_version }}
-          git push origin ${{ env.release_version }}
-        shell: bash
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+      - name: Create Draft GitHub Release
+        uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          token: ${{ secrets.PAT_TOKEN }}
+          tag_name: ${{ env.release_version }}
+          release_name: ${{ env.release_version }}
+          draft: true
           prerelease: true
+
+      - name: Publish Draft GitHub Release
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer ${{ secrets.PAT_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
