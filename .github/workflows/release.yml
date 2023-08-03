@@ -36,4 +36,4 @@ jobs:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the secret name you created
         run: |
           git remote set-url origin https://github.com/${{ github.repository }}.git
-          git push --follow-tags origin master  # Use the correct branch name
+          git push --follow-tags origin master  
